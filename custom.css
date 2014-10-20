@@ -1,0 +1,70 @@
+<style type="text/css">
+
+
+body, p, td, li, div {
+  color: black;
+}
+
+
+article {
+  color:black;
+}
+
+p {
+  color:black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-shadow: 0 0 0 #000 !important;
+  color: black;
+}
+
+/* line 535, ../scss/default.scss */
+article.smaller p, article.smaller ul, article.smaller ol {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+/* line 541, ../scss/default.scss */
+article.smaller table td, article.smaller table th {
+  font-size: 18px;
+}
+/* line 545, ../scss/default.scss */
+article.smaller pre {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+/* line 550, ../scss/default.scss */
+article.smaller q {
+  font-size: 40px;
+  line-height: 48px;
+}
+/* line 554, ../scss/default.scss */
+article.smaller q:before, article.smaller q:after {
+  font-size: 60px;
+}
+
+code {
+  font-size: 95%;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+  color: #2a7cdf;
+  font-weight: 200;
+}
+
+iframe {
+    -moz-transform: scale(0.825, 0.825); 
+    -webkit-transform: scale(0.825, 0.825); 
+    -o-transform: scale(0.825, 0.825);
+    -ms-transform: scale(0.825, 0.825);
+    transform: scale(0.825, 0.825); 
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    -o-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    border: solid #ccc 5px;
+}
+
+</style>
+
