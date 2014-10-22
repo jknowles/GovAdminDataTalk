@@ -202,7 +202,7 @@ methods may apply
 
 ## Why? Linked Administrative Systems
 
-(NEW PIC)
+![Punch Card Stack](assets/punchcardstack.jpg)
 
 ## Why? Longitudinal Records
 
