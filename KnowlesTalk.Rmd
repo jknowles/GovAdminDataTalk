@@ -10,7 +10,29 @@ output:
 
 ## Introduction
 
+- Why does causality matter for policy making?
+- Why do we like experiments?
+- Why do we hate experiments?
+- Turning a weakness into a strength
 - What does policy analysis look like in the real world?
+
+
+## Causality Matters
+
+![correlation does not equal causation](assets/PiratesVsTemp.png)
+
+## But it's not everything
+
+- Decisions have to be made with best evidence available
+- 
+
+## Experiments, Yay!
+
+![explosions are fun](assets/menthoscoke.jpg)
+
+## Experiments, Boo!
+
+![until they are not](assets/beakerbunsen.jpg)
 
 
 ## John Conway's Game of Life
@@ -26,7 +48,7 @@ grid
 > - These simple patterns result in emergent patterns that stabilize in 
 unpredictable but orderly ways
 
-```{r, echo=FALSE, results='hide', message=FALSE}
+```{r, echo=FALSE, results='hide', message=FALSE, eval=FALSE}
 library(caTools)
 # The game.of.life() function ------------------
 # Arguments:
@@ -87,23 +109,42 @@ game.of.life(side=450, steps=300, file="assets/conway.gif")
 gc()
 ```
 
+## Results
+
+![Conway's Game of Life](assets/conway.gif)
+
 ## Policy is Not Unlike This
 
 - Start with simple rules
 - Add more simple rules
+- Regulated entities react to these rules
 - Observe emergent properties
+- Repeat
+
+## Quasi-Experiment Examples in the Wild
+
+- Regression discontinuity through ELL reclassification
+- Fixed effects regression through BLBC program offer
+- Propensity score matching for pre-college scholarship programs
+- Differences in differences evaluation of community learning centers (CLCs)
+
+
+## Why? Linked Administrative Systems
+
+![Panopticon](assets/real-panopticon.jpg)
+
+
+## Why? Big Data
+
+![Say big data](assets/say-big-data-one-more-time.jpg)
+
+
+## How does it work?
+
+## Caveats
+
+## Come work for DPI
 
 
 
-## Slide with R Code and Output
-
-```{r}
-summary(cars)
-```
-
-## Slide with Plot
-
-```{r, echo=FALSE}
-plot(cars)
-```
 
