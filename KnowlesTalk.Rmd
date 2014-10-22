@@ -246,6 +246,10 @@ a poor fit.
 ## Limitations: Unobservables and Selection Bias
 
 
+## Limitations: Limited Ability to Understand the Mechanisms At Work
+
+- Cannot often go back and figure out why program happened
+- Little implementation data, if any
 
 ## Quasi-Experiment Examples in the Wild
 
