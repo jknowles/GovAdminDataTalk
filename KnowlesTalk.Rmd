@@ -40,7 +40,7 @@ resulted in the same outcome, time and time again
 chemical processes progress could still be made thanks to repeatability
 
 
-## Experiments Do
+## Experiments do...
 
 - Provide solid internal reliability when done well
 - Provide idealized estimates of impact
@@ -64,7 +64,7 @@ measure the variability in implementation that will occur.
 - Are limited in their ability to test the variability in response to treatment 
 under different conditions -- recruiting and retaining subjects is \$\$
 
-## Causality is good, but it's not everything
+## Causality is good, but...
 
 - Decisions have to be made with best evidence available
 - Ruling out alternative explanations generally comes with increased costs
@@ -73,7 +73,7 @@ favor of more expensive objective measurement
 - The principal of repeatability that underlies the logic of the experiment is 
 not necessarily true in an evolving social structure
 
-## An Aside on the Policy Process
+## An Aside on the policy process
 
 - Think about a crude model of the policy process as existing of individual 
 units governed by a few simple overlapping rules (regulations)
@@ -152,7 +152,7 @@ game.of.life(side=450, steps=300, file="assets/conway.gif")
 gc()
 ```
 
-## Results {.flexbox .vcenter}
+## Game of Life {.flexbox .vcenter}
 
 <div class="centered">
 ![Conway's Game of Life](assets/conway.gif)
@@ -170,7 +170,7 @@ gc()
 The resulting emergent properties are difficult to predict. 
 
 
-## A Thought Experiment
+## A thought experiment in education
 
 - Consider education policy for a moment
 - An experiment done in 10 school districts statewide to improve reading
@@ -190,7 +190,7 @@ their regular classroom instruction
 > - What is the control group?
 
 
-## Experiments in Policy
+## The role of experiments in policy
 
 - A randomized controlled trial (RCT) in policy is rarely possible and rarely 
 desirable
@@ -228,15 +228,15 @@ to retrospectively evaluate an existing program
 methods may apply
 
 
-## Why? Linked Administrative Systems {.flexbox .vcenter}s
+## Why? Linked administrative systems {.flexbox .vcenter}s
 
 <div class="centered">
 ![Punch Card Stack](assets/punchcardstack.jpg)
 </div>
 
-## Why? Longitudinal Records {.flexbox .vcenter}
+## Why? Longitudinal records {.flexbox .vcenter}
 
-- If we record everything, we can use instant replay to evaluate policy changes 
+- If we record everything, we can use "instant replay"" to evaluate policy changes 
 retrospectively
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -262,7 +262,7 @@ qplot(x, y) + theme_dpi() + geom_smooth() + geom_line(alpha = 0.4) +
 ![Say big data](assets/say-big-data-one-more-time.jpg)
 </div>
 
-## Summary: Strength of Administrative Records
+## Summary: Strength of administrative records
 
 - Big sample size
 - Good chance for pre- and post-tests
