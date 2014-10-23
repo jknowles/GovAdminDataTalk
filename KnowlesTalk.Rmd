@@ -13,27 +13,29 @@ output:
 - Why does causality matter for policy making?
 - Why do we like experiments?
 - Why do we hate experiments?
-- Turning a weakness into a strength
+- What quasi-experimental alternatives do we have available?
 - What does policy analysis look like in the real world?
 
-
-## Causality Matters
+## The problem, we need to establish some sense of causality
 
 ![correlation does not equal causation](assets/PiratesVsTemp.png)
 
 - But politics has a way of trying to make it seem so
 
-## But it's not everything
-
-- Decisions have to be made with best evidence available
-- Ruling out alternative explanations generally comes with increased costs
-- Scientific process downplays the subjective judgments of domain experts in 
-favor of more expensive objective measurement
-- May 
-
 ## Experiments, Yay!
 
 ![explosions are fun](assets/menthoscoke.jpg)
+
+## The experiment is the "gold" standard
+
+- The experiment has been around since the 8th century when it was believed 
+to be pioneered by Abu Mūsā Jābir ibn Hayyān (known as Geber)
+- He was of course trying to manufacture gold from other metals
+- The advantage was that repeating the same process on the same materials 
+resulted in the same outcome, time and time again
+- Even with primitive measurements and primitive understandings of the underlying 
+chemical processes progress could still be made
+
 
 ## Experiments Do
 
@@ -46,29 +48,35 @@ favor of more expensive objective measurement
 
 ![until they are not](assets/beakerbunsen.jpg)
 
-## Experiments Do Not
+## How social policy differs from rocks
 
-- Have external reliability. Does the lab resemble the real world?
+- We can rarely isolate the effect we want to manipulate in isolation
+- Even when we can, the isolated environment we create is rarely a sufficient 
+proxy for the other contexts the intervention will be used in
 - Often ignore the importance of precise implementation and often fail to 
 measure the variability in implementation that will occur. 
 - Do not help understand the reasons program attrition might occur
 - Are limited in their ability to test the variability in response to treatment 
 under different conditions -- recruiting and retaining subjects is \$\$
 
-## Experiments in Policy
+## Causality is good, but it's not everything
 
-- A randomized controlled trial (RCT) in policy is rarely possible and rarely 
-desirable
-- RCTs require a level of control and authority that regulators rarely 
-possess
-- RCTs require a level of monitoring and tracking that may not be appropriate 
-for a governmental entity
-- Recruiting and retaining subjects is expensive and can substantially add to the 
-bill of a policy
-- Lack of external validity makes it hard to say "Program X worked in the trial, 
-let's go to scale."
+- Decisions have to be made with best evidence available
+- Ruling out alternative explanations generally comes with increased costs
+- Scientific process downplays the subjective judgments of domain experts in 
+favor of more expensive objective measurement
+- May 
 
 ## An Aside on the Policy Process
+
+- Think about a crude model of the policy process as existing of individual 
+units governed by a few simple overlapping rules (regulations)
+- Over time individuals respond to those rules, change their behavior, and 
+interact with one another
+- This creates an emergent equilibrium that is often unpredictable as individual 
+actors seek to work within the regulations to maximize their own objectives
+- A simple mathematical model illustrates how complex even a very simple system 
+can be
 
 ## John Conway's Game of Life
 
@@ -148,13 +156,15 @@ gc()
 
 ![Conway's Game of Life](assets/conway.gif)
 
-## Policy is Not Unlike This
+## Policy is even more complex
 
+- Complex patterns emerge even when the rules are simple and actors are single 
+minded
 - Start with simple rules
 - Add more simple rules
 - Regulated entities react to these rules
 - Observe emergent properties
-- Repeat
+- Repeat in multiple dimensions simultaneously
 
 ## A Thought Experiment
 
@@ -171,13 +181,22 @@ their regular classroom instruction
 > - How were the schools selected to participate?
 
 
-## Challenge
+## Experiments in Policy
 
-Even if we get the experiment perfect, the evidence it generates is not sufficient 
-to guarantee success at scale. 
+- A randomized controlled trial (RCT) in policy is rarely possible and rarely 
+desirable
+- RCTs require a level of control and authority that regulators rarely 
+possess
+- RCTs take time and are especially difficult for long-running programs and 
+long-term outcomes - *often the most interesting*
+- RCTs require a level of monitoring and tracking that may not be appropriate 
+for a governmental entity
+- Recruiting and retaining subjects is expensive and can substantially add to the 
+bill of a policy
+- Lack of external validity makes it hard to say "Program X worked in the trial, 
+let's go to scale."
 
-Non-experimental methods impose a lower cost and lower risk, while providing 
-evidence useful in discussions about how to scale. 
+Enter quasi-experimental methods.
 
 ## How to spot the opportunity?
 
@@ -206,7 +225,7 @@ methods may apply
 
 ## Why? Longitudinal Records
 
-- If we record everything, we can use instant reply to evaluate policy changes 
+- If we record everything, we can use instant replay to evaluate policy changes 
 retrospectively
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -234,6 +253,8 @@ qplot(x, y) + theme_dpi() + geom_smooth() + geom_line(alpha = 0.4) +
 
 - Big sample size
 - Good chance for pre- and post-tests
+- Good capture and ability to measure and track changes in the regulatory 
+environment
 
 
 ## Limitations: Measures
@@ -244,6 +265,7 @@ a poor fit.
 ![bad scales](assets/oldtimeyscale.jpg)
 
 ## Limitations: Unobservables and Selection Bias
+
 
 
 ## Limitations: Limited Ability to Understand the Mechanisms At Work
@@ -270,6 +292,10 @@ this range)
 - Cannot generalize this to a broad population, very narrow policy question, 
 tied to specific test threshold
 
+## Example
+
+![ELL model spec](assets/modelSpecplot.png)
+
 
 ## Wisconsin Bilingual Bicultural Program
 
@@ -278,6 +304,11 @@ tied to specific test threshold
 start and stop 
 - Look at performance of students who move between schools with and without 
 BLBC programs
+- Compare results across different evaluation methods
+
+## Results
+
+![ELL models](assets/modelbracketlang.png)
 
 
 ## Pre-college Scholarship Lottery
@@ -289,6 +320,16 @@ program due to oversubscription to students who attend program
 
 ## DD in CLC
 
+- Look at performance of students in cohort before CLC available and cohort 
+after
+- Same school, different cohort of pupils
+- Across 100 different school sites
+- Control group spread evenly across years (due to variation in program start)
+- Treatment group spread evenly across years
+
+## Results
+
+![CLC models](assets/clc.png)
 
 
 ## Caveats
