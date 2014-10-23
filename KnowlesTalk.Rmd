@@ -5,7 +5,7 @@ date: "Monday, October 20, 2014"
 output:
   ioslides_presentation:
     css: custom.css
-    smaller: yes
+    smaller: true
 ---
 
 ## Introduction
@@ -16,25 +16,28 @@ output:
 - What quasi-experimental alternatives do we have available?
 - What does policy analysis look like in the real world?
 
-## The problem, we need to establish some sense of causality
+## Avoid the spurious
 
 ![correlation does not equal causation](assets/PiratesVsTemp.png)
 
-- But politics has a way of trying to make it seem so
+- Politics has a way of trying to making spurious bivariate correlations seem 
+important
 
-## Experiments, Yay!
+## Experiments, Yay! {.flexbox .vcenter}
 
+<div class="centered">
 ![explosions are fun](assets/menthoscoke.jpg)
+</div>
 
 ## The experiment is the "gold" standard
 
-- The experiment has been around since the 8th century when it was believed 
+- The "experiment" has been around since the 8th century when it was believed 
 to be pioneered by Abu Mūsā Jābir ibn Hayyān (known as Geber)
 - He was of course trying to manufacture gold from other metals
 - The advantage was that repeating the same process on the same materials 
 resulted in the same outcome, time and time again
 - Even with primitive measurements and primitive understandings of the underlying 
-chemical processes progress could still be made
+chemical processes progress could still be made thanks to repeatability
 
 
 ## Experiments Do
@@ -44,9 +47,11 @@ chemical processes progress could still be made
 - Often test interventions in a best-case scenario
 - Provide clean data with transparent analyses to draw conclusions
 
-## Experiments, Boo!
+## Experiments, Boo! {.flexbox .vcenter}
 
+<div class="centered">
 ![until they are not](assets/beakerbunsen.jpg)
+</div>
 
 ## How social policy differs from rocks
 
@@ -65,7 +70,8 @@ under different conditions -- recruiting and retaining subjects is \$\$
 - Ruling out alternative explanations generally comes with increased costs
 - Scientific process downplays the subjective judgments of domain experts in 
 favor of more expensive objective measurement
-- May 
+- The principal of repeatability that underlies the logic of the experiment is 
+not necessarily true in an evolving social structure
 
 ## An Aside on the Policy Process
 
@@ -80,16 +86,10 @@ can be
 
 ## John Conway's Game of Life
 
-> - Simple rules in large systems create emergent properties that are complex 
-and unpredictable
-> - A simple example is John Conway's Game of Life, played on a two-dimensional 
-grid
 > - Any live cell with fewer than two neighbors dies
 > - Any live cell with two or three neighbors lives
 > - Any live cell with more than three live neighbors dies
 > - Any dead cell with exactly three live neighbors becomes a live cell
-> - These simple patterns result in emergent patterns that stabilize in 
-unpredictable but orderly ways
 
 ```{r, echo=FALSE, results='hide', message=FALSE, eval=FALSE}
 library(caTools)
@@ -152,33 +152,42 @@ game.of.life(side=450, steps=300, file="assets/conway.gif")
 gc()
 ```
 
-## Results
+## Results {.flexbox .vcenter}
 
+<div class="centered">
 ![Conway's Game of Life](assets/conway.gif)
+</div>
 
 ## Policy is even more complex
 
-- Complex patterns emerge even when the rules are simple and actors are single 
-minded
 - Start with simple rules
-- Add more simple rules
 - Regulated entities react to these rules
 - Observe emergent properties
+- Add more simple rules
+- New patterns emerge
 - Repeat in multiple dimensions simultaneously
+
+The resulting emergent properties are difficult to predict. 
+
 
 ## A Thought Experiment
 
 - Consider education policy for a moment
-- An experiment done in 10 school districts statewide shows promising test score 
-improvements for 5th grade students in reading with a sample of almost 4,000 students
+- An experiment done in 10 school districts statewide to improve reading
+scores for 5th grade students in reading with a sample of almost 4,000 students
 - The intervention is a 6 week reading program focused on badgers and balloons
 - The program randomly assigned students to receive the treatment, or to receive 
 their regular classroom instruction
+- The treatment group shows positive effects that are statistically significant
 
 ## What are some threats to external validity here?
 
-> - What is the control group?
 > - How were the schools selected to participate?
+> - What staff were chosen to implement the policy?
+> - What other policies are in place in the treatment communities? 
+> - What measurements were used to assess reading progress? 
+> - How big is the reading gain compared to the control group?
+> - What is the control group?
 
 
 ## Experiments in Policy
@@ -219,11 +228,13 @@ to retrospectively evaluate an existing program
 methods may apply
 
 
-## Why? Linked Administrative Systems
+## Why? Linked Administrative Systems {.flexbox .vcenter}s
 
+<div class="centered">
 ![Punch Card Stack](assets/punchcardstack.jpg)
+</div>
 
-## Why? Longitudinal Records
+## Why? Longitudinal Records {.flexbox .vcenter}
 
 - If we record everything, we can use instant replay to evaluate policy changes 
 retrospectively
@@ -245,33 +256,40 @@ qplot(x, y) + theme_dpi() + geom_smooth() + geom_line(alpha = 0.4) +
 
 ```
 
-## Why? Big Data
+## Why? Big Data {.flexbox .vcenter}
 
+<div class="centered">
 ![Say big data](assets/say-big-data-one-more-time.jpg)
+</div>
 
 ## Summary: Strength of Administrative Records
 
 - Big sample size
 - Good chance for pre- and post-tests
-- Good capture and ability to measure and track changes in the regulatory 
-environment
+- Broad coverage of local innovation and ability to measure and track changes in the regulatory environment
+- No need to plan for a specific control group because all groups have tracked outcomes
+- Lots of contextual data to evaluate variability in program success across an 
+array of implementation contexts
 
 
-## Limitations: Measures
+## Limitations: Measures {.flexbox .vcenter}
 
 We are stuck with the measurements we already have which may be outdated or 
 a poor fit.
 
+<div class="centered">
 ![bad scales](assets/oldtimeyscale.jpg)
+</div>
 
 ## Limitations: Unobservables and Selection Bias
 
-
-
-## Limitations: Limited Ability to Understand the Mechanisms At Work
-
+- The mechanism by which a program starts up may be based on non-repeatable local 
+factors that are not observed
+- Successful programs may be more likely to start in places where they can be 
+successful
 - Cannot often go back and figure out why program happened
-- Little implementation data, if any
+- Little implementation data, if any exists
+
 
 ## Quasi-Experiment Examples in the Wild
 
@@ -292,10 +310,11 @@ this range)
 - Cannot generalize this to a broad population, very narrow policy question, 
 tied to specific test threshold
 
-## Example
+## Example {.flexbox .vcenter}
 
+<div class="centered">
 ![ELL model spec](assets/modelSpecplot.png)
-
+</div>
 
 ## Wisconsin Bilingual Bicultural Program
 
@@ -306,10 +325,11 @@ start and stop
 BLBC programs
 - Compare results across different evaluation methods
 
-## Results
+## Results {.flexbox .vcenter}
 
+<div class="centered">
 ![ELL models](assets/modelbracketlang.png)
-
+</div>
 
 ## Pre-college Scholarship Lottery
 
@@ -318,7 +338,7 @@ program due to oversubscription to students who attend program
 - Able to compare years in program as students reapply
 - Need to be sure access is random -- employ checks for randomness in denials
 
-## DD in CLC
+## Difference in Difference in Community Learning Centers
 
 - Look at performance of students in cohort before CLC available and cohort 
 after
@@ -327,10 +347,11 @@ after
 - Control group spread evenly across years (due to variation in program start)
 - Treatment group spread evenly across years
 
-## Results
+## Results {.flexbox .vcenter}
 
+<div class="centered">
 ![CLC models](assets/clc.png)
-
+</div>
 
 ## Caveats
 
@@ -339,13 +360,16 @@ after
 Bayesian estimation, simulation, and model visualization
 - All the caveats about selection on unobservables apply. Content expertise will 
 help you evaluate how credible of a validity threat this provides.
-
+- Need to focus on substantive impact and broad estimates of benefits recognizing 
+that statistical error does not account for all the uncertainty inherent in an 
+evaluation
 
 ## Come work for DPI
 
 - DPI is hiring a research analyst part time from Novemeber/December through 
 the spring
 - Flexible hours (10-30 hours a week, depending on availability)
+- Job will end in late May and transition to a full time position
 - Work on a variety of data analyses in support of DPI budget, legislative, and 
 administrative initiatives
 - To apply, send me a short resume and cover letter [jared.knowles@dpi.wi.gov](mailto:jared.knowles@dpi.wi.gov)
