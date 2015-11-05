@@ -1,7 +1,7 @@
 ---
 title: 'Using Administrative Data to Conduct Rigorous Evaluations: Promises and Challenges'
 author: "Jared Knowles"
-date: "Monday, October 20, 2014"
+date: "Thursday November 5, 2015"
 output:
   ioslides_presentation:
     css: custom.css
@@ -38,7 +38,6 @@ to be pioneered by Abu Mūsā Jābir ibn Hayyān (known as Geber)
 resulted in the same outcome, time and time again
 - Even with primitive measurements and primitive understandings of the underlying 
 chemical processes progress could still be made thanks to repeatability
-
 
 ## Experiments do...
 
@@ -167,8 +166,7 @@ gc()
 - New patterns emerge
 - Repeat in multiple dimensions simultaneously
 
-The resulting emergent properties are difficult to predict. 
-
+The resulting emergent properties are **extremely** difficult to predict. 
 
 ## A thought experiment in education
 
@@ -192,8 +190,8 @@ their regular classroom instruction
 
 ## The role of experiments in policy
 
-- A randomized controlled trial (RCT) in policy is rarely possible and rarely 
-desirable
+- A randomized controlled trial (RCT) in policy is rarely possible (and rarely 
+desirable?)
 - RCTs require a level of control and authority that regulators rarely 
 possess
 - RCTs take time and are especially difficult for long-running programs and 
@@ -205,7 +203,15 @@ bill of a policy
 - Lack of external validity makes it hard to say "Program X worked in the trial, 
 let's go to scale."
 
-Enter quasi-experimental methods.
+## So now what?
+
+<iframe src="http://giphy.com/embed/33iqmp5ATXT5m" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/sad-depressed-disappointed-33iqmp5ATXT5m">via GIPHY</a></p>
+
+## Alternative?
+
+Quasi-experimental methods
+
+<iframe src="http://giphy.com/embed/2CcKiHPDsJqVi" width="480" height="410" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/stephen-colbert-finger-guns-television-2CcKiHPDsJqVi">via GIPHY</a></p>
 
 ## How to spot the opportunity?
 
@@ -228,7 +234,7 @@ to retrospectively evaluate an existing program
 methods may apply
 
 
-## Why? Linked administrative systems {.flexbox .vcenter}s
+## Why? Linked administrative systems {.flexbox .vcenter}
 
 <div class="centered">
 ![Punch Card Stack](assets/punchcardstack.jpg)
@@ -252,7 +258,6 @@ qplot(x, y) + theme_dpi() + geom_smooth() + geom_line(alpha = 0.4) +
   geom_vline(xintercept = as.numeric(as.Date("2013-04-01")))+
   labs(x = "Year", y = "Scores", 
        title = "Example Longitudinal Series of Ratings")
-
 
 ```
 
@@ -294,9 +299,9 @@ successful
 ## Quasi-Experiment Examples in the Wild
 
 - Regression discontinuity through ELL reclassification
-- Fixed effects regression through BLBC program offer
 - Lottery for pre-college scholarship programs
 - Differences in differences evaluation of community learning centers (CLCs)
+- Reverse program evaluation of achievement gap
 
 ## ELL Reclassification
 
@@ -316,21 +321,6 @@ tied to specific test threshold
 ![ELL model spec](assets/modelSpecplot.png)
 </div>
 
-## Wisconsin Bilingual Bicultural Program
-
-- Look at a number of models of program effectiveness using student records
-- Look at performance of students who switch in and out of BLBC due to program 
-start and stop 
-- Look at performance of students who move between schools with and without 
-BLBC programs
-- Compare results across different evaluation methods
-
-## Results {.flexbox .vcenter}
-
-<div class="centered">
-![ELL models](assets/modelbracketlang.png)
-</div>
-
 ## Pre-college Scholarship Lottery
 
 - Compare outcomes of students who were denied access to pre-college scholarship 
@@ -338,7 +328,7 @@ program due to oversubscription to students who attend program
 - Able to compare years in program as students reapply
 - Need to be sure access is random -- employ checks for randomness in denials
 
-## Difference in Difference in Community Learning Centers
+## Difference in Differences in Community Learning Centers
 
 - Look at performance of students in cohort before CLC available and cohort 
 after
@@ -353,9 +343,29 @@ after
 ![CLC models](assets/clc.png)
 </div>
 
+## Identifying Gap Closing Schools
+
+- Sometimes we can precisely measure the results we want, but did not collect 
+data on the inputs driving those results
+- In Wisconsin we can do a good job of measuring which schools are closing the 
+achievement gap using multilevel longitudinal growth models
+- The problem is we don't know what these schools did
+- The solution -- use a mixed methods approach and identify outlier schools, 
+gap growers and gap closers, and interview/survey/observe them around their 
+practices
+
+## Promoting Excellence For All
+
+- DPI led taskforce that investigated practices in successful gap-closing schools
+
+<div class="centered">
+![Random Effects](assets/README-reSimplot-1.png)
+</div>
+
 ## Caveats
 
-- Large datasets *can* work against you by giving false precision to estimates due to large sample size
+- Large datasets *can* work against you by giving false precision to estimates 
+due to large sample size
 - Large datasets *can* make robust techniques of estimating errors trickier such as 
 Bayesian estimation, simulation, and model visualization
 - All the caveats about selection on unobservables apply. Content expertise will 
@@ -366,15 +376,28 @@ evaluation
 
 ## Come work for DPI
 
-- DPI is hiring a research analyst part time from Novemeber/December through 
-the spring
-- Flexible hours (10-30 hours a week, depending on availability)
-- Job will end in late May and transition to a full time position
-- Work on a variety of data analyses in support of DPI budget, legislative, and 
-administrative initiatives
-- To apply, send me a short resume and cover letter [jared.knowles@dpi.wi.gov](mailto:jared.knowles@dpi.wi.gov)
+- DPI was recently awarded a four year data use grant that includes a substantial 
+research and evaluation component
+- Will be hiring a research analyst and a program manager in Q1 of next year
+- Both positions will play a substantial role in evaluating policies, practices, 
+and interventions associated with reducing the achievement gap, and more importantly, 
+identifying how to disseminate this information more effectively to the field
+- Keep your eyes on [www.wisc.jobs](www.wisc.jobs)
+- If you have questions, contact me directly:
+[jared.knowles@dpi.wi.gov](mailto:jared.knowles@dpi.wi.gov)
 
 
+## Wisconsin Bilingual Bicultural Program
 
+- Look at a number of models of program effectiveness using student records
+- Look at performance of students who switch in and out of BLBC due to program 
+start and stop 
+- Look at performance of students who move between schools with and without 
+BLBC programs
+- Compare results across different evaluation methods
 
+## Results {.flexbox .vcenter}
 
+<div class="centered">
+![ELL models](assets/modelbracketlang.png)
+</div>
